@@ -33,23 +33,29 @@ void BFS(Vertex vertex) {
 	for (int i = 0; i < graph.size(); ++i) {
 		color[i] = 0; //white
 		d[i] = inf;
-		pred[i] = NULL;
+		pred[i] = 0;
 	}
 
 	color[vertex] = 1;
 	d[vertex] = 0;
-	pred[vertex] = NULL;
+	pred[vertex] = 0;
+
 	Q.push(vertex);
-	while (Q.size()) {
-		vertex = Q.back();
-		for (std::list<int>::iterator it = graph[vertex].begin(); it != graph[vertex].end(); ++it) {
+
+	while (Q.size() != 0) {
+		vertex = Q.front();
+		Q.pop();
+		for (std::list<int>::iterator it = graph[vertex].begin(); it != graph[vertex].end(); it++) {
 			if (!color[*it]) {
 				color[*it] = 1;
 				d[*it]++;
 				pred[*it] = vertex;
 				Q.push(*it);
+				std::cout << *it << ' ';
 			}
+			std::cout << '(' << *it << ')';
 		}
+		std::cout << std::endl;
 		color[vertex] = 2;
 	}
 	getchar();
