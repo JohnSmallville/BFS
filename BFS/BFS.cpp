@@ -42,8 +42,8 @@ void BFS(Vertex vertex) {
 	Q.push(vertex);
 	while (Q.size()) {
 		vertex = Q.back();
-		for (std::vector <Vertex> it = graph.begin(); it != graph.end(); ++it) {
-			if (!color[it]) {
+		for (std::list<int>::iterator it = graph[vertex].begin(); it != graph[vertex].end(); ++it) {
+			if (!color[*it]) {
 				color[it] = 1;
 				d[it]++;
 				pred[it] = vertex;
@@ -52,6 +52,7 @@ void BFS(Vertex vertex) {
 		}
 		color[vertex] = 2;
 	}
+	getchar();
 }
 
 int _tmain(int argc, _TCHAR* argv[])
