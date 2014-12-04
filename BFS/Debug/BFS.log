@@ -1,66 +1,15 @@
-﻿Build started 04.12.2014 21:59:38.
+﻿Build started 04.12.2014 22:03:25.
      1>Project "C:\Users\John_Dorian\Documents\Visual Studio 2013\Projects\BFS\BFS\BFS.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\BFS.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt BFS.cpp
          BFS.cpp
      1>c:\users\john_dorian\documents\visual studio 2013\projects\bfs\bfs\bfs.cpp(33): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\john_dorian\documents\visual studio 2013\projects\bfs\bfs\bfs.cpp(47): error C2679: binary '[' : no operator found which takes a right-hand operand of type 'std::_List_iterator<std::_List_val<std::_List_simple_types<int>>>' (or there is no acceptable conversion)
-                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\vector(1196): could be 'int &std::vector<int,std::allocator<_Ty>>::operator [](unsigned int)'
-                 with
-                 [
-                     _Ty=int
-                 ]
-                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\vector(1180): or       'const int &std::vector<int,std::allocator<_Ty>>::operator [](unsigned int) const'
-                 with
-                 [
-                     _Ty=int
-                 ]
-                 while trying to match the argument list '(std::vector<int,std::allocator<_Ty>>, std::_List_iterator<std::_List_val<std::_List_simple_types<int>>>)'
-                 with
-                 [
-                     _Ty=int
-                 ]
-     1>c:\users\john_dorian\documents\visual studio 2013\projects\bfs\bfs\bfs.cpp(48): error C2679: binary '[' : no operator found which takes a right-hand operand of type 'std::_List_iterator<std::_List_val<std::_List_simple_types<int>>>' (or there is no acceptable conversion)
-                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\vector(1196): could be 'int &std::vector<int,std::allocator<_Ty>>::operator [](unsigned int)'
-                 with
-                 [
-                     _Ty=int
-                 ]
-                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\vector(1180): or       'const int &std::vector<int,std::allocator<_Ty>>::operator [](unsigned int) const'
-                 with
-                 [
-                     _Ty=int
-                 ]
-                 while trying to match the argument list '(std::vector<int,std::allocator<_Ty>>, std::_List_iterator<std::_List_val<std::_List_simple_types<int>>>)'
-                 with
-                 [
-                     _Ty=int
-                 ]
-     1>c:\users\john_dorian\documents\visual studio 2013\projects\bfs\bfs\bfs.cpp(49): error C2679: binary '[' : no operator found which takes a right-hand operand of type 'std::_List_iterator<std::_List_val<std::_List_simple_types<int>>>' (or there is no acceptable conversion)
-                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\vector(1196): could be 'int &std::vector<int,std::allocator<_Ty>>::operator [](unsigned int)'
-                 with
-                 [
-                     _Ty=int
-                 ]
-                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\vector(1180): or       'const int &std::vector<int,std::allocator<_Ty>>::operator [](unsigned int) const'
-                 with
-                 [
-                     _Ty=int
-                 ]
-                 while trying to match the argument list '(std::vector<int,std::allocator<_Ty>>, std::_List_iterator<std::_List_val<std::_List_simple_types<int>>>)'
-                 with
-                 [
-                     _Ty=int
-                 ]
-     1>c:\users\john_dorian\documents\visual studio 2013\projects\bfs\bfs\bfs.cpp(50): error C2664: 'void std::queue<Vertex,std::deque<_Ty,std::allocator<_Ty>>>::push(const int &)' : cannot convert argument 1 from 'std::_List_iterator<std::_List_val<std::_List_simple_types<int>>>' to 'int &&'
-                 with
-                 [
-                     _Ty=Vertex
-                 ]
-                 Reason: cannot convert from 'std::_List_iterator<std::_List_val<std::_List_simple_types<int>>>' to 'int'
-                 No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
-     1>Done Building Project "C:\Users\John_Dorian\Documents\Visual Studio 2013\Projects\BFS\BFS\BFS.vcxproj" (Build target(s)) -- FAILED.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\John_Dorian\Documents\Visual Studio 2013\Projects\BFS\Debug\BFS.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\John_Dorian\Documents\Visual Studio 2013\Projects\BFS\Debug\BFS.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\John_Dorian\Documents\Visual Studio 2013\Projects\BFS\Debug\BFS.lib" /MACHINE:X86 Debug\BFS.obj
+         Debug\stdafx.obj
+         BFS.vcxproj -> C:\Users\John_Dorian\Documents\Visual Studio 2013\Projects\BFS\Debug\BFS.exe
+     1>Done Building Project "C:\Users\John_Dorian\Documents\Visual Studio 2013\Projects\BFS\BFS\BFS.vcxproj" (Build target(s)).
 
-Build FAILED.
+Build succeeded.
 
-Time Elapsed 00:00:01.13
+Time Elapsed 00:00:01.68

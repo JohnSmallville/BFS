@@ -44,10 +44,10 @@ void BFS(Vertex vertex) {
 		vertex = Q.back();
 		for (std::list<int>::iterator it = graph[vertex].begin(); it != graph[vertex].end(); ++it) {
 			if (!color[*it]) {
-				color[it] = 1;
-				d[it]++;
-				pred[it] = vertex;
-				Q.push(it);
+				color[*it] = 1;
+				d[*it]++;
+				pred[*it] = vertex;
+				Q.push(*it);
 			}
 		}
 		color[vertex] = 2;
